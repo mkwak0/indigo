@@ -1,11 +1,266 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈페이지 만들기</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+
 </head>
+
 <body>
-<h1>test</h1>
+    <div id="wrap">
+        <!-- 상단 메뉴 -->
+        <header class="header cfixed">
+            <h1 class="logo">
+                <a href="#">INDIGO</a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">WE ARE</a></li>
+                    <li><a href="#">WORK</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 이미지 슬라이더 -->
+        <article class="slider">
+            <img src="./images/p-images/slide01.jpg" alt="">
+        </article>
+
+        <!-- 메인 컨텐츠 -->
+        <section class="content">
+            <section class="display-section">
+            <div class="container">
+                <h2 class="sec-tit">WE ARE</h2>
+                <p class="desc">
+                    대통령이 임시회의 집회를 요구할 때에는 기간과 집회요구의 이유를 명시하여야 한다. 제2항의 재판관중 3인은 국회에서 선출하는 자를, 3인은 대법원장이 지명하는 자를 임명한다.
+                    <br>
+                    지방자치단체는 주민의 복리에 관한 사무를 처리하고 재산을 관리하며, 법령의 범위안에서 자치에 관한 규정을 제정할 수 있다. 공무원의 직무상 불법행위로 손해를 받은 국민은 법률이 정하는 바에 의하여 국가 또는 공공단체에 정당한 배상을 청구할 수 있다. 이 경우 공무원 자신의 책임은 면제되지 아니한다.
+                </p>
+            </div>
+            </section>
+     
+        <section class="promotion-section">
+            <div class="container">
+                <li>
+                    <a href="#">
+                        <img src="./images/s-images/promo01.png" alt="">
+                        <h3>HOME</h3>
+                        <P>광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.</P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/s-images/promo02.png" alt="">
+                        <h3>WE ARE</h3>
+                        <P>광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.</P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/s-images/promo03.png" alt="">
+                        <h3>WORK</h3>
+                        <P>광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.</P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/s-images/promo04.png" alt="">
+                        <h3>BLOG</h3>
+                        <P>광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.</P>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/s-images/promo05.png" alt="">
+                        <h3>CONTACT</h3>
+                        <P>광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.</P>
+                    </a>
+                </li>
+            </div>
+        </section>
+            <hr class="divider">
+
+            <section class="work-section cfixed">
+                <h2 class="sec-tit">WORK</h2>
+                <ul class="work-list">
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Running</h3> 
+                                <span>Running</span>
+                            </div>
+                            <img src="./images/p-images/work01.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Rugby</h3>
+                                <span>광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.</span>
+                            </div>
+                            <img src="./images/p-images/work02.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Weight</h3>
+                                <span>광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.</span>
+                            </div>
+                            <img src="./images/p-images/work03.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Marathon</h3>
+                                <span>광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다.</span>
+                            </div>
+                            <img src="./images/p-images/work04.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Boxing</h3>
+                                <span>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</span>
+                            </div>
+                            <img src="./images/p-images/work05.jpg" alt="">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Ice Hockey</h3>
+                                <span>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</span>
+                            </div>
+                            <img src="./images/p-images/work06.jpg" alt="">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Skate Boarding</h3>
+                                <span>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</span>
+                            </div>
+                            <img src="./images/p-images/work07.jpg" alt="">
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                            <div class="info">
+                                <h3>Basketball</h3>
+                                <span>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</span>
+                            </div>
+                            <img src="./images/p-images/work08.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="divider">
+
+            <section class="blog-section">
+                <div class="container">
+                    <h2 class="sec-tit">BLOG</h2>
+                    <ul class="blog-list">
+                        <li>
+                            <a href="#">
+                                <img src="./images/p-images/blog01.jpg" alt="">
+                            </a>
+                            <time datetime="2020-06-15">2020/06/15</time>
+                            <a href="#">
+                                <h3>
+                                    대통령은 법률이 정하는 바에 의하여 훈장 기타의 영전을 수여한다.
+                                </h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/p-images/blog02.jpg" alt="">
+                            </a>
+                            <time datetime="2020-06-15">2020/06/15</time>
+                            <a href="#">
+                                <h3>
+                                    대통령은 법률이 정하는 바에 의하여 훈장 기타의 영전을 수여한다.
+                                </h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/p-images/blog03.jpg" alt="">
+                            </a>
+                            <time datetime="2020-06-15">2020/06/15</time>
+                            <a href="#">
+                                <h3>
+                                    대통령은 법률이 정하는 바에 의하여 훈장 기타의 영전을 수여한다.
+                                </h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="contact-secction">
+                <h2 class="sec-tit">CONTACT</h2>
+                <div class="form-box">
+                    <form action="" method="">
+                        <fieldset class="cfixed">
+                            <legend class="blind">CONTACT</legend>
+                            <div class="form">
+                                <label for="name" class="blind"></label>
+                                <input type="text" id="name" placeholder="Name">
+                                <label for="phone" class="blind">phone</label>
+                                <input type="tel" id="phone" placeholder="Phone">
+                                <label for="email" class="blind">Email</label>
+                                <input type="email" id="email" placeholder="Email Address">
+                            </div>
+                            <div class="textarea">
+                                <label for="message" class="blind">message</label>
+                                <textarea name="message" id="message" placeholder="Message"></textarea>
+                            </div>
+                        </fieldset>
+                        <div class="sent-btn">
+                            <button>Send Message</button>
+                        </div>
+                    </form>
+                </div>
+
+
+            </section>
+
+
+        </section>
+       
+
+
+
+        <footer class="footer">
+            <!-- 지도 -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13045.913752971053!2d129.0613530325328!3d35.169626142944125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x504858f808971ad9!2z67KE6rGw7YK5IOu2gOyCsOyWkeygleygkA!5e0!3m2!1sen!2skr!4v1592198781600!5m2!1sen!2skr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p class="copyright">made by MK</p>
+        </footer>
+    </div>
+
+   
 </body>
+
 </html>
